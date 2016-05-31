@@ -3,7 +3,8 @@
 (function(){
   angular
   .module("petseeker", [
-    "ui.router"
+    "ui.router",
+    "pets"
   ])
   .config([
     "$stateProvider",
@@ -14,7 +15,9 @@
     $stateProvider
     .state("petIndex", {
       url: "/pets",
-      templateUrl: "js/pets/index.html"
+      templateUrl: "js/pets/index.html",
+      controller: "PetIndexController",
+      controllerAs: "PetIndexViewModel"
     })
     .state("petShow", {
       url: "/pets/:id",
