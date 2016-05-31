@@ -1,0 +1,27 @@
+Pets
+* belongs to a shelter
+- ID
+- Breed
+- Species
+- Age
+- Name
+
+Shelters
+* has many pets
+- ID
+- Name
+- Address
+- Phone
+
+Users
+- ID
+- not really necessary yet
+
+use a show view as a way to do a search
+custom query?  a form linked to a Post action
+when submitted
+URL params
+
+
+do CRUD on pets first
+set up the API for Pets, too

@@ -1,0 +1,14 @@
+As a user, I want to have search options for finding pets by age, species (or kind), and location.
+I want to be able to see the addresses and contact info of the shelters.
+I want to see a map with the selected shelter.
+I want to be able to search for a pet by age.
+I want to be able to search for a pet with special needs.
+I want to be able to search for a pet by breed.
+I want to be able to save pets' profiles for later reference.
+I want to be able to set my own search preferences and be notified when a matching pet is found.
+
+As a site owner, I want to display a carousel of random pets.
+I want to be able to create data for new pets.
+I want to display tips and hints about pet care.
+I want to have buttons for sharing pets to social media.
+I want to automatically update pet data as shelter populations change.
