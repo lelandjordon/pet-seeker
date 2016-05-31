@@ -1,5 +1,5 @@
 "use strict";
-console.log("index controller here");
+console.log("index controller js loaded");
 
 (function(){
   angular
@@ -9,11 +9,28 @@ console.log("index controller here");
   ]);
 
   function PetIndexControllerFunction(){
-    this.pets = [
-      {name: "These"},
-      {name: "Are"},
-      {name: "Hardcoded"},
-      {name: "Pets"}
-    ]
+    this.pets = pets;
+    this.newPet = {};
+    this.create = function(){
+      pets.unshift(this.newPet);
+      this.newPet = {}
+    }
+    this.delete = function(id){
+      pet.splice(id, 1);
+    }
   }
 }());
+
+
+
+
+
+
+
+
+// this.pets = [
+//   {name: "These"},
+//   {name: "Are"},
+//   {name: "Hardcoded"},
+//   {name: "Pets"}
+// ]

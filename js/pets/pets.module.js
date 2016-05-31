@@ -1,5 +1,5 @@
 "use strict";
-console.log("pets js file");
+console.log("pets module js file loaded");
 
 (function(){
   angular

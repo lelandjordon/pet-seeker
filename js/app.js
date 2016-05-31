@@ -8,10 +8,12 @@
   ])
   .config([
     "$stateProvider",
+    "$locationProvider",
     RouterFunction
   ]);
 
-  function RouterFunction($stateProvider){
+  function RouterFunction($stateProvider, $locationProvider){
+    $locationProvider.html5Mode(true);
     $stateProvider
     .state("petIndex", {
       url: "/pets",
@@ -21,7 +23,9 @@
     })
     .state("petShow", {
       url: "/pets/:id",
-      templateUrl: "js/pets/show.html"
+      templateUrl: "js/pets/show.html",
+      controller: "PetShowController",
+      controllerAs: "PetShowViewModel"
     });
   }
 
