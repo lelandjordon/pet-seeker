@@ -4,6 +4,7 @@
   angular
   .module("petseeker", [
     "ui.router",
+    "ngResource",
     "pets"
   ])
   .config([
