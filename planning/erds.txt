@@ -1,10 +1,11 @@
 Pets
 * belongs to a shelter
 - ID
-- Breed
 - Species
+- Breed
 - Age
 - Name
+- Photo_URL
 
 Shelters
 * has many pets
