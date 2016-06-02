@@ -37,7 +37,7 @@
     .state("petEdit", {
       url: "/pets/:id/edit.html",
       controller: "PetEditController",
-      controllerAs: "PedEditViewModel"
+      controllerAs: "PetEditViewModel"
     });
   }
 
