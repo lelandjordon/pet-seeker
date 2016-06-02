@@ -5,20 +5,20 @@ console.log("index controller js loaded");
   angular
   .module("pets")
   .controller("PetIndexController", [
+    "PetFactory",
     PetIndexControllerFunction
   ]);
 
-  PetIndexController.$inject = ["PetFactory"];
   function PetIndexControllerFunction(PetFactory) {
-    var indexVm = this;
-    indexVm.pets = PetFactory.query();
-    indexVm.newPet = new PetFactory();
+    // var PetIndexViewModel = this;
+    this.pets = PetFactory.query();
+    // PetIndexViewModel.newPet = new PetFactory();
 
-    indexVm.create = function($state){
-      indexVm.newPet.$save().then(function(res) {
-        indexVm.pets.push(res)
-      })
-    };
+    // PetIndexViewModel.create = function($state){
+      // PetIndexViewModel.newPet.$save().then(function(res) {
+        // PetIndexViewModel.pets.push(res)
+      // })
+    // };
   }
 }());
 

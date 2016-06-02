@@ -10,18 +10,18 @@
 
   PetShowControllerFunction.$inject = ["PetFactory", "$stateParams"];
   function PetShowControllerFunction(PetFactory, $stateParams) {
-    var showVm = this;
-    showVm.pet = PetFactory.get({id: $stateParams.id});
+    var PetShowViewModel = this;
+    PetShowViewModel.pet = PetFactory.get({id: $stateParams.id});
 
-    showVm.update = function(){
-      showVm.pet.$update({id: $stateParams.id});
+    PetShowViewModel.update = function(){
+      PetShowViewModel.pet.$update({id: $stateParams.id});
     };
 
-    showVm.delete = function(){
-      showVm.pet.$delete({id: $stateParams.id});
+    PetShowViewModel.delete = function(){
+      PetShowViewModel.pet.$delete({id: $stateParams.id});
     }
   };
-  
+
 })();
 
 

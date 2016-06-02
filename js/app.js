@@ -22,11 +22,22 @@
       controller: "PetIndexController",
       controllerAs: "PetIndexViewModel"
     })
+    .state("petNew", {
+      url: "/pets/new",
+      templateUrl: "js/pets/new.html",
+      controller: "PetNewController",
+      controllerAs: "PetNewViewModel"
+    })
     .state("petShow", {
       url: "/pets/:id",
       templateUrl: "js/pets/show.html",
       controller: "PetShowController",
       controllerAs: "PetShowViewModel"
+    })
+    .state("petEdit", {
+      url: "/pets/:id/edit.html",
+      controller: "PetEditController",
+      controllerAs: "PedEditViewModel"
     });
   }
 

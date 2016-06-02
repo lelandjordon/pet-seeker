@@ -3,11 +3,14 @@
 (function(){
   angular
   .module("pets")
-  .factory("PetFactory", PetFactoryFunc);
+  .factory("PetFactory", [
+    "$resource",
+    PetFactoryFunc
+  ])
 
   PetFactoryFunc.$inject = ["$resource"];
   function PetFactoryFunc($resource) {
-    return $resource("http://localhost:3000/pets/:id", {}, {
+    return $resource("http://localhost:3000/shelters/:id", {}, {
       update: {method: "PUT"}
     });
   }
