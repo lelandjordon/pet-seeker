@@ -10,7 +10,6 @@ console.log("index controller js loaded");
   ]);
 
   function PetIndexControllerFunction(PetFactory) {
-    // var PetIndexViewModel = this;
     this.pets = PetFactory.query();
     // PetIndexViewModel.newPet = new PetFactory();
 
