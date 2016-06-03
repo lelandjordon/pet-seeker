@@ -2,3 +2,7 @@ body {
   text-align: center;
   font-family: sans-serif;
 }
+
+img {
+  width: 70vw;
+}
