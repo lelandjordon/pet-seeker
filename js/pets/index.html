@@ -1,8 +1,7 @@
 <h2>This is js pets index.</h2>
 
 <div>
-  <input data-ng-model="PetIndexViewModel.newPet.name" placeholder="New Pet's Name" />
-  <button data-ng-click="PetIndexViewModel.create()">Create...</button>
+  <a data-ui-sref="petNew">Create New Pet!</a>
 </div>
 <div data-ng-repeat="pet in PetIndexViewModel.pets">
   <div>

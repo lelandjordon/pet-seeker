@@ -10,9 +10,11 @@
     ])
 
     function PetNewControllerFunction( PetFactory, $stateParams ){
-      this.pet = new PetFactory();
-      this.create = function(){
-        this.pet.$save()
+      var PetNewViewModel = this;
+      PetNewViewModel.pet = new PetFactory();
+      PetNewViewModel.create = function(){
+        console.log(PetNewViewModel.pet)
+        PetNewViewModel.pet.$save()
       }
     }
 }());
