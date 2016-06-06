@@ -10,14 +10,14 @@
 
   PetFactoryFunc.$inject = ["$resource"];
   function PetFactoryFunc($resource) {
-    return $resource("https://pet-seeker-api.herokuapp.com/pets/:id", {}, {
+    return $resource("http://localhost:3000/pets/:id", {}, {
       update: {method: "PUT"}
     });
   }
 })();
 
 
+// return $resource("https://pet-seeker-api.herokuapp.com/pets/:id", {}, {
 
 
 // for running locally:
-// return $resource("http://localhost:3000/pets/:id", {}, {
