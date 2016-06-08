@@ -10,6 +10,7 @@
 
   PetFactoryFunc.$inject = ["$resource"];
   function PetFactoryFunc($resource) {
+    // for using remote API hosted at Heroku:
     return $resource("https://pet-seeker-api.herokuapp.com/pets/:id", {}, {
       update: {method: "PUT"}
     });
