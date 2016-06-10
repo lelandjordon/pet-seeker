@@ -17,7 +17,5 @@
 })();
 
 
-// return $resource("https://pet-seeker-api.herokuapp.com/pets/:id", {}, {
-
-
 // for running locally:
+// return $resource("https://pet-seeker-api.herokuapp.com/pets/:id", {}, {
