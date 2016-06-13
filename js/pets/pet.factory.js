@@ -3,10 +3,9 @@
 (function(){
   angular
   .module("pets")
-  .factory("PetFactory", [
-    "$resource",
-    PetFactoryFunc
-  ])
+  .factory("PetFactory", PetFactoryFunc)
+
+  console.log("loaded pet factory js");
 
   PetFactoryFunc.$inject = ["$resource"];
   function PetFactoryFunc($resource) {

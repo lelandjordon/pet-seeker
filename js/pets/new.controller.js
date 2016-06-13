@@ -9,6 +9,8 @@
       PetNewControllerFunction
     ])
 
+    console.log("loaded new controller js");
+
     function PetNewControllerFunction( PetFactory, $stateParams ){
       var PetNewViewModel = this;
       PetNewViewModel.pet = new PetFactory();
