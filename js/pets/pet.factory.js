@@ -3,10 +3,9 @@
 (function(){
   angular
   .module("pets")
-  .factory("PetFactory", [
-    "$resource",
-    PetFactoryFunc
-  ])
+  .factory("PetFactory", PetFactoryFunc)
+
+  console.log("loaded pet factory js");
 
   PetFactoryFunc.$inject = ["$resource"];
   function PetFactoryFunc($resource) {
@@ -18,7 +17,5 @@
 })();
 
 
-
-
 // for running locally:
-// return $resource("http://localhost:3000/pets/:id", {}, {
+// return $resource("https://pet-seeker-api.herokuapp.com/pets/:id", {}, {

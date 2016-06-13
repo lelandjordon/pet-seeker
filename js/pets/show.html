@@ -5,4 +5,9 @@
   <p>{{PetShowViewModel.pet.age}} years old</p>
 <img src="{{PetShowViewModel.pet.photo_url}}">
 </div>
-<p><button type="button" data-ui-sref="petEdit">Edit this entry</button></p>
+
+<p>
+  ID# {{PetShowViewModel.pet.id}}
+</p>
+
+<p><a data-ui-sref="petEdit({id: PetShowViewModel.pet.id})" >Edit this entry</a></p>

@@ -1,11 +1,11 @@
 <h2>Edit {{PetEditViewModel.pet.name}}</h2>
 
 <form>
-  <input value="PetEditViewModel.pet.name"    data-ng-model="PetEditViewModel.pet.name" placeholder="{{PetShowViewModel.pet.name}}" />
-  <input value="PetEditViewModel.pet.species" data-ng-model="PetEditViewModel.pet.species" placeholder="{{PetShowViewModel.pet.species}}"/>
-  <input value="PetEditViewModel.pet.breed"   data-ng-model="PetEditViewModel.pet.breed" placeholder="{{PetShowViewModel.pet.breed}}"/>
-  <input value="PetEditViewModel.pet.age"     data-ng-model="PetEditViewModel.pet.age" placeholder="{{PetShowViewModel.pet.age}}"/>
-  <input value="PetEditViewModel.pet.photo_url" data-ng-model="PetEditViewModel.pet.photo_url" placeholder="{{PetShowViewModel.pet.photo_url}}"/>
-  <button data-ng-click="petEdit.update()">Update</button>
-  <button data-ng-click="petEdit.destroy()">Delete</button>
+  <input value="PetEditViewModel.pet.name"    data-ng-model="PetEditViewModel.pet.name" placeholder="Name"/>
+  <input value="PetEditViewModel.pet.species" data-ng-model="PetEditViewModel.pet.species" placeholder="Species"/>
+  <input value="PetEditViewModel.pet.breed"   data-ng-model="PetEditViewModel.pet.breed" placeholder="breed"/>
+  <input value="PetEditViewModel.pet.age"     data-ng-model="PetEditViewModel.pet.age" placeholder="age"/>
+  <input value="PetEditViewModel.pet.photo_url" data-ng-model="PetEditViewModel.pet.photo_url" placeholder="url"/>
+  <a data-ng-click="PetEditViewModel.update()">Update</a>
+  <a data-ng-click="PetEditViewModel.destroy()">Delete</a>
 </form>
