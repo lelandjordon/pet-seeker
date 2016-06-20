@@ -6,3 +6,7 @@ body {
 img {
   width: 70vw;
 }
+
+a {
+  text-decoration: none;
+}

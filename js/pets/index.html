@@ -1,12 +1,14 @@
-<h2>This is js pets index.</h2>
-
+<h3>These are pets we currently have for adoption.</h3>
+<h3>Click on their names for more details.</h3>
 <div>
   <a data-ui-sref="petNew">Create New Pet!</a>
 </div>
 <div data-ng-repeat="pet in PetIndexViewModel.pets">
-  <div>
+  <div class="pet_list">
     <!-- <button data-ng-click="petEdit({id: pet.id})">Edit</button> -->
-    <a data-ui-sref="petShow({id: pet.id})">{{pet.name}}</a>
-    <img src="{{pet.photo_url}}">
+    <a data-ui-sref="petShow({id: pet.id})">
+      <img src="{{pet.photo_url}}">
+      <p>{{pet.name}}, the {{pet.breed}} {{pet.species}}</p>
+    </a>
   </div>
 </div>
