@@ -9,4 +9,9 @@ img {
 
 a {
   text-decoration: none;
+  padding: 0.5em;
+  background: #ddd;
+}
+button {
+  color: blue;
 }
