@@ -17,6 +17,7 @@
       PetNewViewModel.create = function(){
         console.log(PetNewViewModel.pet)
         PetNewViewModel.pet.$save()
+        $location.path("/pets")
       }
     }
 }());

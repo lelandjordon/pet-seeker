@@ -1,34 +1,95 @@
 <!DOCTYPE html>
 <html data-ng-app="petseeker">
-  <head>
-    <meta charset="utf-8">
-    <title>PetSeeker</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-resource.min.js"></script>
+<head>
+  <meta charset="utf-8">
 
-    <script>
-    var pets = [
-      {name: "Fluffy"},
-      {name: "Maxie"},
-      {name: "Zippy"},
-      {name: "Moe"}
-    ]
-    </script>
-    <script src="js/app.js"></script>
-    <script src="js/pets/pets.module.js"></script>
-    <script src="js/pets/pet.factory.js"/></script>
-    <script src="js/pets/index.controller.js"></script>
-    <script src="js/pets/show.controller.js"></script>
-    <script src="js/pets/new.controller.js"></script>
-    <script src="js/pets/edit.controller.js"></script>
-    <base href="/" />
-  </head>
-  <body>
-    <h1>Pet Seeker</h1>
-    <h2><a data-ui-sref="petIndex">Click here to see all our PetSeeker listings!</a></h2>
-    <main data-ui-view></main>
+  <title>PetSeeker</title>
 
-  </body>
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-resource.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <script src="js/app.js"></script>
+  <script src="js/pets/pets.module.js"></script>
+  <script src="js/pets/pet.factory.js"/></script>
+  <script src="js/pets/index.controller.js"></script>
+  <script src="js/pets/show.controller.js"></script>
+  <script src="js/pets/new.controller.js"></script>
+  <script src="js/pets/edit.controller.js"></script>
+
+  <!-- Automatic changer for carousel -->
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  });
+  </script>
+
+  <base href="/" />
+</head>
+<body style="background-image:url(assets/GBcalypso800x600.jpg); background-size:cover; background-repeat:no-repeat">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" data-ui-sref="petHome">PetSeeker</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a data-ui-sref="petIndex">Pet Listings</a></li>
+        <!-- <li><a href="#"> Tips Page? </a></li> -->
+        <!-- <li><a href="#"> About Us page? </a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://lelandjordon.github.io/index.html" target="_blank"><span class="glyphicon glyphicon-user"></span> Webmaster</a></li>
+        <!-- Login function to add later -->
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <main data-ui-view>
+    <div class="container">
+      <div class="jumbotron" style="background: rgba(20,20,20,0.4)">
+        <h1 class="text-center" style="color: #eee">Pet Seeker</h1>
+        <p class="text-center" style="color: #eee">We are the freshest site on the Internet for helping pets find their Forever Homes.</p>
+      </div>
+
+    <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%">
+
+      Wrapper for slides
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="assets/GBcalypso800x600.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="assets/JNbestFriend800x600.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="assets/PVdPsiskat800x600.jpg" alt="Flower">
+        </div>
+
+        <div class="item">
+          <img src="assets/RRgetTheLeg800x600.jpg" alt="Flower">
+        </div>
+      </div>
+
+    </div> -->
+  </div>
+
+  </main>
+
+</body>
 </html>

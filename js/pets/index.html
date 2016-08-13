@@ -1,14 +1,25 @@
-<h3>These are pets we currently have for adoption.</h3>
-<h3>Click on their names for more details.</h3>
-<div>
-  <a data-ui-sref="petNew">Create New Pet!</a>
-</div>
-<div data-ng-repeat="pet in PetIndexViewModel.pets">
-  <div class="pet_list">
-    <!-- <button data-ng-click="petEdit({id: pet.id})">Edit</button> -->
-    <a data-ui-sref="petShow({id: pet.id})">
-      <img src="{{pet.photo_url}}">
-      <p>{{pet.name}}, the {{pet.breed}} {{pet.species}}</p>
-    </a>
+<div class="text-center">
+  <h3>These are pets currently waiting for their forever homes.</h3>
+  <h3>Click on their photos for more details.</h3>
+  <div>
+    <a data-ui-sref="petNew" class="btn btn-primary">Add New Pet!</a>
+  </div>
+  <div class="container">
+
+    <div class="row">
+    <div data-ng-repeat="pet in PetIndexViewModel.pets">
+      <div class="pet_list">
+
+          <div class="col-sm-6">
+        <p class="text-center" data-ui-sref="petShow({id: pet.id})">
+          <!-- <button data-ng-click="petEdit({id: pet.id})">Edit</button> -->
+          <img src="{{pet.photo_url}}" class="img-rounded img-thumbnail"
+          alt="{{pet.name}}, the {{pet.breed}} {{pet.species}}">
+          <p class="text-center">{{pet.name}}, the {{pet.breed}} {{pet.species}}</p>
+        </p>
+      </div>
+      </div>
+  </div>
+  </div>
   </div>
 </div>
