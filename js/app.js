@@ -41,7 +41,7 @@
       controllerAs: "PetEditViewModel"
     })
     .state("petHome", {
-      url:          "/",
+      url:          "pet-seeker/",
       templateUrl:  "pet-seeker/index.html"
     });
   }
