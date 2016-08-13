@@ -39,6 +39,10 @@
       templateUrl:  "js/pets/edit.html",
       controller:   "PetEditController",
       controllerAs: "PetEditViewModel"
+    })
+    .state("petHome", {
+      url:          "/home",
+      templateUrl:  "index.html"
     });
   }
 

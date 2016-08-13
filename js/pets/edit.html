@@ -1,14 +1,12 @@
-<h2>Edit {{PetEditViewModel.pet.name}}</h2>
+<h2 class="text-center">Edit {{PetEditViewModel.pet.name}}</h2>
 
-<form>
+<form role="form" class="text-center">
   <p><input value="PetEditViewModel.pet.name"    data-ng-model="PetEditViewModel.pet.name" placeholder="Name"/></p>
   <p><input value="PetEditViewModel.pet.species" data-ng-model="PetEditViewModel.pet.species" placeholder="Species"/></p>
   <p><input value="PetEditViewModel.pet.breed"   data-ng-model="PetEditViewModel.pet.breed" placeholder="breed"/></p>
   <p><input value="PetEditViewModel.pet.age"     data-ng-model="PetEditViewModel.pet.age" placeholder="age"/></p>
   <p><input value="PetEditViewModel.pet.photo_url" data-ng-model="PetEditViewModel.pet.photo_url" placeholder="url"/></p>
+  <p><button class="btn btn-success" data-ng-click="PetEditViewModel.update()">Update {{PetEditViewModel.pet.name}}</button></p>
+  <p><button type="button" class="btn btn-danger" data-ng-click="PetEditViewModel.destroy()">Delete {{PetEditViewModel.pet.name}}'s Entry</button></p>
+  <p><button type="button" class="btn btn-default" data-ui-sref="petIndex">Cancel and Go Back</button></p>
 </form>
-  <button data-ng-click="PetEditViewModel.update()">Update</button>
-  <a data-ng-click="PetEditViewModel.destroy()">Delete</a>
-
-
-  <p><button type="button" data-ng-click="PetNewViewModel.create()">Create</button></p>
