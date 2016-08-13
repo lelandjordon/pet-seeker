@@ -43,6 +43,8 @@
     .state("petHome", {
       url:          "/home",
       templateUrl:  "index.html"
+      // controller:   "PetHomeController",
+      // controllerAs: "PetHomeViewWodel"
     });
   }
 
