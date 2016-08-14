@@ -43,6 +43,7 @@
     .state("petHome", {
       url:          "pet-seeker/",
       templateUrl:  "pet-seeker/index.html"
+
     });
   }
 
