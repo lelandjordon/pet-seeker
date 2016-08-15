@@ -1,11 +1,17 @@
-<h2 class="text-center">Create Entry for Pet</h2>
 
-<form role="form" class="text-center">
-  <p><input value="PetNewViewModel.pet.name"    data-ng-model="PetNewViewModel.pet.name" Placeholder="Name"/></p>
-  <p><input value="PetNewViewModel.pet.species" data-ng-model="PetNewViewModel.pet.species" Placeholder="Species"/></p>
-  <p><input value="PetNewViewModel.pet.breed"   data-ng-model="PetNewViewModel.pet.breed" Placeholder="Breed"/></p>
-  <p><input value="PetNewViewModel.pet.age"     data-ng-model="PetNewViewModel.pet.age" Placeholder="Age"/></p>
-  <p><input value="PetNewViewModel.pet.photo_url" data-ng-model="PetNewViewModel.pet.photo_url" Placeholder="Photo url"/></p>
-  <p><button type="button" class="btn" data-ng-click="PetNewViewModel.create()">Create</button></p>
-  <p><button type="button" class="btn" data-ui-sref="petIndex">Cancel</button></p>
-</form>
+<div class="container">
+  <div class="jumbotron" style="background:rgba(20,20,20,0.5); margin-top:4em">
+
+    <h2 class="text-center" style="color:#eee">Create Entry for Pet</h2>
+
+    <form role="form" class="text-center">
+      <p><input value="PetNewViewModel.pet.name"    data-ng-model="PetNewViewModel.pet.name" Placeholder="Name"/></p>
+      <p><input value="PetNewViewModel.pet.species" data-ng-model="PetNewViewModel.pet.species" Placeholder="Species"/></p>
+      <p><input value="PetNewViewModel.pet.breed"   data-ng-model="PetNewViewModel.pet.breed" Placeholder="Breed"/></p>
+      <p><input value="PetNewViewModel.pet.age"     data-ng-model="PetNewViewModel.pet.age" Placeholder="Age"/></p>
+      <p><input value="PetNewViewModel.pet.photo_url" data-ng-model="PetNewViewModel.pet.photo_url" Placeholder="Photo url"/></p>
+      <p><button type="button" class="btn btn-primary" data-ng-click="PetNewViewModel.create()">Create</button></p>
+      <p><button type="button" class="btn" data-ui-sref="petIndex">Cancel</button></p>
+    </form>
+  </div>
+</div>
