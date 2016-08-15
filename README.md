@@ -3,6 +3,9 @@ WDI9 Project 4 submission
 
 This is the front-end component to my Project 4 submission for the Web Development Immersive course at General Assembly in DC.
 
+The live site is here:
+http://lelandjordon.github.io/pet-seeker/
+
 The Rails API for serving the data to this app can be found here:
 https://github.com/lelandjordon/pet-seeker-api
 
